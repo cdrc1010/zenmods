@@ -18,6 +18,12 @@ npm run preview
 
 The `dist` directory is ready for static hosting.
 
+## GitHub Pages preview
+
+The GitHub Actions workflow in `.github/workflows/deploy.yml` builds and deploys the site on pushes to `main`, or manually from the Actions tab. In the GitHub repository, choose Settings → Pages → Build and deployment → Source → GitHub Actions before running the workflow.
+
+Vite uses a relative base path, and public image URLs use `import.meta.env.BASE_URL`, so the preview works at `https://USERNAME.github.io/REPOSITORY/` without hard-coding the repository name. The `dist` and `node_modules` folders stay out of Git; Actions installs dependencies and builds `dist` automatically. This preview does not require the existing Sites hosting configuration.
+
 ## Content and configuration
 
 - Edit `src/content.js` to update services, carousel photos, and verified shop contact details.

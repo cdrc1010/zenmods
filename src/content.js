@@ -12,19 +12,19 @@ export const shop = {
 // AI-generated accessory concepts, not actual ZenMods builds or fitment claims.
 export const photos = [
   {
-    src: "/images/nmax-accessories.png",
+    src: `${import.meta.env.BASE_URL}images/nmax-accessories.png`,
     title: "Dialed in. Every detail.",
     category: "NMAX / Accessory concept",
     alt: "Illustrative NMAX concept with custom wheels, suspension, windshield, mirrors, and accessories",
   },
   {
-    src: "/images/aerox-accessories.png",
+    src: `${import.meta.env.BASE_URL}images/aerox-accessories.png`,
     title: "Built around your style.",
     category: "Aerox / Accessory concept",
     alt: "Illustrative Aerox concept with bronze alloy wheels, reservoir suspension, compact exhaust, carbon-look trim, and accessories",
   },
   {
-    src: "/images/fazzio-accessories.png",
+    src: `${import.meta.env.BASE_URL}images/fazzio-accessories.png`,
     title: "Classic look. Extra character.",
     category: "Fazzio / Accessory concept",
     alt: "Illustrative Fazzio concept with custom saddle, wheels, windshield, racks, and luggage accessories",

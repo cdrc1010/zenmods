@@ -40,7 +40,7 @@ function Brand({ footer = false }) {
       {!logoFailed ? (
         <img
           className="brand-logo"
-          src="/images/zenmods-logo.png"
+          src={`${import.meta.env.BASE_URL}images/zenmods-logo.png`}
           alt="ZenMods"
           onError={() => setLogoFailed(true)}
         />
